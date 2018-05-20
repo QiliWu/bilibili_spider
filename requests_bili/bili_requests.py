@@ -21,7 +21,7 @@ post_url = 'https://space.bilibili.com/ajax/member/GetInfo'
 for i in range(0, 326480090):
     form_data = {
         'mid':str(i),
-        'csrf':'c4a9f764ab52dd8eacc20b6947c58f35'
+        'csrf':''
     }
     headers = {
         'Accept':'application/json, text/plain, */*',
