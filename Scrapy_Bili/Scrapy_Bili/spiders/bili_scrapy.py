@@ -23,7 +23,7 @@ class ScrapybiliSpider(scrapy.Spider):
         for i in range(0, 326480090):
             form_data = {
                 'mid': str(i),
-                'csrf': 'c4a9f764ab52dd8eacc20b6947c58f35'
+                'csrf': ''
             }
             yield FormRequest(url=post_url, method='POST', headers=self.headers, formdata=form_data, callback=self.parse, meta={'i':i})
 
