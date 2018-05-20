@@ -19,7 +19,7 @@ class ScrapyredisbiliSpider(RedisSpider):
         for i in range(0, 326480090):
             form_data = {
                 'mid': str(i),
-                'csrf': 'c4a9f764ab52dd8eacc20b6947c58f35'
+                'csrf': ''
             }
             yield FormRequest(url=self.post_url,
                               method='POST',
