@@ -16,7 +16,7 @@ class GetIP(object):
     def get_ip_from_api(self):
         #蘑菇代理的付费ip
         #获取代理的api地址，使用自己的appKey, 并将代理存入mysql数据库
-        url = 'http://piping.mogumiao.com/proxy/api/get_ip_al?appKey=7e5d4716e435adadd33397bb47aa21&count=5&expiryDate=0&format=1&newLine=2'
+        url = 'http://piping.mogumiao.com/proxy/api/get_ip_al?appKey=?????????????&count=5&expiryDate=0&format=1&newLine=2'
 
         r = requests.get(url=url)
         data = json.loads(r.text)
